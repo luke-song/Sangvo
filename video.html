@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Prototype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto p-4">
+        <!-- Video Section -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Watch Ads to earn sangvo points</h2>
+            <div class="video-responsive rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://player.vimeo.com/video/76979871" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Banner Section -->
+        <div>
+            <!-- <h2 class="text-xl font-semibold text-gray-800 mb-4">Banner</h2> -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Banner Placeholder" class="w-full">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Any additional JavaScript can be added here
+    </script>
+</body>
+</html>

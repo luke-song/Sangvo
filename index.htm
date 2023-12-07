@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangvo Rewards Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <header class="bg-blue-500 p-4 text-white flex justify-between items-center">
+    <div class="flex items-center">
+      <div class="rounded-full h-12 w-12 overflow-hidden bg-white mr-2">
+        <img src="https://placehold.co/50" alt=""/>
+      </div>
+      <span>Welcome!</span>
+    </div>
+    <div class="flex">
+      <div> 
+        <!-- three zero that represents the points like 000 !-->
+        <div class="flex items-center">
+            <span class="px-5 text-2xl font-bold">000</span>
+        </div>
+      </div>
+      <button class="bg-red-500 px-2 py-1 rounded text-white font-bold mr-2" onclick="redirectToVideoPage()">Earn Sangvo</button>
+      <button class="bg-red-500 px-2 py-1 rounded text-white font-bold mr-2" onclick="redirectToAccountPage()">Pay Sangvo</button>
+      <div class="text-black p-2 bg-white rounded-full" onclick="expandNavBar()">+</div>
+    </div>
+  </header>
+
+  <main class="p-4">
+    <section class="mb-4">
+      <h2 class="text-xl font-bold mb-2">What is the Sangvo?</h2>
+      <p>That's the name of the reward you get after watching advertising.</p>
+    </section>
+
+    <section class="mb-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="p-4 bg-white shadow rounded">
+          <h3 class="font-bold">Do you do full pay at the restaurant?</h3>
+          <img src="/Cartoon Man Dec 6.png" alt="Question Illustration" class="mt-2">
+        </div>
+        <div class="p-4 bg-white shadow rounded">
+          <h3 class="font-bold">No! I eat for free with Sangvo.</h3>
+          <img src="/Cheerful woman illustration (1).png" alt="Answer Illustration" class="mt-2">
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <h3 class="text-xl font-bold mb-2">Restaurant list with Sangvo</h3>
+      <div class="bg-white p-4 rounded shadow">
+        <ul class="list-decimal pl-5">
+            <li>1109 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1110 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1111 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1112 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1113 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1114 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1115 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1116 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1117 E Arques Ave, Sunnyvale, CA 94085</li>
+            <li>1118 E Arques Ave, Sunnyvale, CA 94085</li>
+            <!-- add more list items here -->
+        </ul>
+      </div>
+      
+
+      
+
+    </section>
+
+    <section class="my-4">
+      <img src="https://source.unsplash.com/random/900x300?banner" alt="Big Banner" class="rounded-lg shadow-md">
+  </section>
+
+  </main>
+
+  <footer class="bg-black text-white p-1">
+    
+  <section class="flex justify-around items-center my-4">
+    <img src="https://source.unsplash.com/random/250x100" alt="Dishdash Restaurant Group" class="rounded-lg shadow-md">
+    <img src="https://source.unsplash.com/random/250x100" alt="Black Angus Steakhouse" class="rounded-lg shadow-md">
+</section>
+  </footer>
+
+  <script>
+    function redirectToVideoPage() {
+      window.location.href = "video.html";
+    }
+    function redirectToAccountPage() {
+      window.location.href = "account.html";
+    }
+    function expandNavBar() {
+      window.location.href = "user-profile.html";
+    }
+  </script>
+
+</body>
+
+</html>

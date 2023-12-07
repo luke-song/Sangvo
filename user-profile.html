@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Ensure the placeholder images fit inside the container. */
+    .advertisement img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body class="bg-blue-500">
+  <div class="min-h-screen flex flex-col items-center justify-center">
+    <div class="bg-white w-full max-w-sm rounded-lg shadow-md overflow-hidden">
+      <div class="p-5">
+        <div class="flex justify-between items-center">
+          <span class="text-2xl font-semibold">Join Sangvo Today!</span>
+          <button class="text-gray-500 focus:outline-none">
+
+          </button>
+        </div>
+        <div class="mt-4">
+          <ul class="flex flex-col space-y-3">
+            <li>
+              <button class="w-full px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none">Sign up</button>
+            </li>
+            <li>
+              <button class="w-full px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none">Sign in</button>
+            </li>
+            <li>
+              <button class="w-full px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none">Sign Out</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="advertisement p-5 flex justify-around items-center bg-white">
+        <img src="https://placehold.co/100x50/cccccc/757575.png?text=Ad1" alt="Ad1">
+        <img src="https://placehold.co/100x50/cccccc/757575.png?text=Ad2" alt="Ad2">
+        <img src="https://placehold.co/100x50/cccccc/757575.png?text=Ad3" alt="Ad3">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
